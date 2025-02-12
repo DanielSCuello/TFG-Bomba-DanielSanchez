@@ -1,0 +1,97 @@
+/* Contenedor principal en cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+  grid-template-rows: repeat(2, 1fr);    /* Dos filas */
+  gap: 20px; 
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto 50px; 
+  height: 60vh; 
+  margin-bottom: 100px; 
+}
+
+/* Estilo de cada módulo */
+.modulo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: hsl(0, 0%, 100%);
+  padding: 5px;
+  border-radius: 1px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 150px;  /* Fija el ancho */
+  height: 150px; /* Fija la altura para hacer un cuadrado */
+}
+
+h2 {
+  color: #007bff;
+}
+
+input {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(68, 67, 67);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Pequeño margen para que no toque el borde */
+}
+
+@keyframes colorChange {
+  0% { background-color: rgb(68, 67, 67); }
+  100% { background-color: rgb(247, 6, 6); }
+}
+
+.luz-roj,.luz-apa,.luz-ver {
+  position: absolute;
+  top: 2px;   /* Margen superior */
+  right: 2px; /* Margen derecho */
+  width: 20px; /* Ancho fijo */
+  height: 20px; /* Alto fijo */
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+.luz-roj {
+  background-image: url("../images/luz-roja.png");
+}
+
+.luz-apa {
+  background-image: url("../images/luz-apa.png");
+}
+
+.luz-ver {
+  background-image: url("../images/luz-verde.png");
+}
