@@ -13,10 +13,9 @@ function Bomba(){
 
   const reiniciarBomba = () => {
     setReinicio(true); 
-  
     setTimeout(() => {
       setReinicio(false); 
-    }, 2000);
+    }, 100);
   };
 
   return (
@@ -24,8 +23,8 @@ function Bomba(){
        <table className="tabla">
           <thead>
              <tr>
-                <th><Modulo tipo="temporizador" /></th>
-                <th><Modulo tipo="cables" /></th>
+                <th><Modulo tipo="temporizador" reinicio={reinicio}/></th>
+                <th><Modulo tipo="cables" reinicio={reinicio}/></th>
               </tr>
           </thead>
         </table>

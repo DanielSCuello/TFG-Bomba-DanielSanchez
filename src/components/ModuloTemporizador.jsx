@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import "./../styles/Temporizador.css"; 
 
-function Temporizador({ inicialMinutos }) {
+function Temporizador({ inicialMinutos , setFallado ,reinicio}) {
   const [minutos, setMinutos] = useState(inicialMinutos);
   const [segundos, setSegundos] = useState(0);
+  
+  useEffect(()=>{
+    setMinutos(inicialMinutos);
+    setSegundos(0);
+  },[reinicio])
 
   useEffect(() => {
     const intervalo = setInterval(() => {
       if (minutos === 0 && segundos === 0) {
-        setMinutos(5);
+        setFallado(true);
         clearInterval(intervalo);
       } else if (segundos === 0) {
         setMinutos((prev) => prev - 1);

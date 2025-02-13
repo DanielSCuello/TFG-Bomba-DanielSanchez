@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./../styles/Cables.css";
 import Cable from "./Cable.jsx";
 
-function Cables({setResuelto , fallado ,setFallado , reiniciarCables}) {
+function Cables({setResuelto , fallado ,setFallado , reinicio}) {
   const[orden,setOrden]=useState(1);
   const [cables, setCables] = useState([
     { color: "roj", cortado: false , orden:1},
@@ -45,7 +45,7 @@ function Cables({setResuelto , fallado ,setFallado , reiniciarCables}) {
     })
   );
   setOrden(1); 
-  }, [reiniciarCables]);
+  }, [reinicio]);
 
   return (
     <div className="cables-container">
