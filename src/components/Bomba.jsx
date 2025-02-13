@@ -5,21 +5,32 @@ import "./../styles/Bomba.css";
 
 
 function Bomba(){
+  const [reinicio, setReinicio] = useState(false);
   const modulos=[
     {name:"temporizador"},
     {name:"cables"},
   ]
-    return (
-        <div className="tabla-container" >
-          <table className="tabla">
-            <thead>
-              <tr>
+
+  const reiniciarBomba = () => {
+    setReinicio(true); 
+  
+    setTimeout(() => {
+      setReinicio(false); 
+    }, 2000);
+  };
+
+  return (
+    <div className="tabla-container" >
+       <table className="tabla">
+          <thead>
+             <tr>
                 <th><Modulo tipo="temporizador" /></th>
                 <th><Modulo tipo="cables" /></th>
               </tr>
-            </thead>
-          </table>
-        </div>
+          </thead>
+        </table>
+        <button class="button" onClick={reiniciarBomba}>Reinicio</button>
+      </div>
     );
 }
 

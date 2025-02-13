@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 .tabla-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -37,4 +39,30 @@
   .tabla tr:hover {
     background-color: #444;
   }
-  
+
+  .button {
+    width: 30px;
+    height: 30px;
+    background-color: red;  
+    border: 2px solid black; 
+    color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px; 
+    font-size: 9px; 
+    font-family: 'Staatliches', sans-serif; 
+    cursor: pointer;
+    transition: 0.3s; 
+    padding: 0;
+    line-height: 1; 
+    text-transform: uppercase; 
+}
+
+
+button:hover {
+    background-color: darkred;
+    border-color: white;
+}
+
