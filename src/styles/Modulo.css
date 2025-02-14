@@ -85,13 +85,13 @@ button:hover {
 }
 
 .luz-roj {
-  background-image: url("../images/luz-roja.png");
+  background-image: url("../images/images-luces/luz-roja.png");
 }
 
 .luz-apa {
-  background-image: url("../images/luz-apa.png");
+  background-image: url("../images/images-luces/luz-apa.png");
 }
 
 .luz-ver {
-  background-image: url("../images/luz-verde.png");
+  background-image: url("../images/images-luces/luz-verde.png");
 }
