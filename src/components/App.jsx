@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Bomba from "./Bomba"; 
-import "./../styles/Modulo.css"; 
+import "./../styles/Fondo.css"; 
 
 
 function App() {

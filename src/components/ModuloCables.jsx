@@ -31,6 +31,13 @@ function Cables({setResuelto , fallado ,setFallado , reinicio}) {
     }
   };
 
+  const shuffleArray = (array) => {
+    return array
+      .map((item) => ({ item, sort: Math.random() })) // Asigna un número aleatorio a cada elemento
+      .sort((a, b) => a.sort - b.sort) // Ordena los elementos según el número aleatorio
+      .map(({ item }) => item); // Devuelve solo los elementos
+  };
+
   useEffect(() => {
     if (cables.every(cable => cable.cortado)) {
       setResuelto(true);
@@ -38,13 +45,25 @@ function Cables({setResuelto , fallado ,setFallado , reinicio}) {
     }
   }, [cables]);
 
-  useEffect(() => {
+ /* useEffect(() => {
     setCables(cables => cables.map(cable => {
       console.log(`${cable.color} reiniciado`); 
       return { ...cable, cortado: false }; 
     })
   );
   setOrden(1); 
+  }, [reinicio]);*/
+
+  useEffect(() => {
+    setCables((cables) =>
+      shuffleArray(
+        cables.map((cable) => {
+          console.log(`${cable.color} reiniciado`);
+          return { ...cable, cortado: false };
+        })
+      )
+    );
+    setOrden(1);
   }, [reinicio]);
 
   return (

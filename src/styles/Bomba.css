@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .tabla-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    justify-content: center;
-    padding: 20px;
-    background-color: #333;
+  flex-direction: column;
+  display: flex;
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra todo verticalmente */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width : 400px;
+  gap: 10px;
+  padding: 20px;
+  background-color: #333;
+  background-image: url("../images/Bomba.png");
   }
   
   .tabla {
@@ -16,14 +20,13 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-    width: 100%;
+    width: auto;
     text-align: center;
     color: white;
   }
   
   .tabla th, .tabla td {
     border: 0,5px solid #888;
-    padding: 1px;
     font-size: 18px;
   }
   
@@ -38,6 +41,18 @@
   
   .tabla tr:hover {
     background-color: #444;
+  }
+
+  .button-container{ 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/Boton-Container");
   }
 
   .button {
@@ -55,7 +70,6 @@
     font-family: 'Staatliches', sans-serif; 
     cursor: pointer;
     transition: 0.3s; 
-    padding: 0;
     line-height: 1; 
     text-transform: uppercase; 
 }
@@ -65,4 +79,5 @@ button:hover {
     background-color: darkred;
     border-color: white;
 }
+
 

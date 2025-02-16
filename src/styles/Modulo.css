@@ -19,12 +19,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-repeat: no-repeat;
   background: hsl(0, 0%, 100%);
   padding: 5px;
   border-radius: 1px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  width: 150px;  /* Fija el ancho */
-  height: 150px; /* Fija la altura para hacer un cuadrado */
+  width: 162px;  /* Fija el ancho */
+  height: 162px; /* Fija la altura para hacer un cuadrado */
+  background-image: url("../images/Modulo.png");
 }
 
 h2 {

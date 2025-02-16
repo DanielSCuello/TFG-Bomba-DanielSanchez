@@ -19,16 +19,18 @@ function Bomba(){
   };
 
   return (
-    <div className="tabla-container" >
+    <div className="tabla-container">
        <table className="tabla">
           <thead>
              <tr>
-                <th><Modulo tipo="temporizador" reinicio={reinicio}/></th>
-                <th><Modulo tipo="cables" reinicio={reinicio}/></th>
+                <th ><Modulo tipo="temporizador" reinicio={reinicio}/></th>
+                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
               </tr>
           </thead>
         </table>
-        <button class="button" onClick={reiniciarBomba}>Reinicio</button>
+        <div>
+          <button class="button" onClick={reiniciarBomba}>Reinicio</button>
+        </div>
       </div>
     );
 }
