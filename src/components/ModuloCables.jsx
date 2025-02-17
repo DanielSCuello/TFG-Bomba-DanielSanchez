@@ -33,9 +33,9 @@ function Cables({setResuelto , fallado ,setFallado , reinicio}) {
 
   const shuffleArray = (array) => {
     return array
-      .map((item) => ({ item, sort: Math.random() })) // Asigna un número aleatorio a cada elemento
-      .sort((a, b) => a.sort - b.sort) // Ordena los elementos según el número aleatorio
-      .map(({ item }) => item); // Devuelve solo los elementos
+      .map((item) => ({ item, sort: Math.random() })) 
+      .sort((a, b) => a.sort - b.sort) 
+      .map(({ item }) => item); 
   };
 
   useEffect(() => {
@@ -44,15 +44,6 @@ function Cables({setResuelto , fallado ,setFallado , reinicio}) {
       console.log("Esta resuelto");
     }
   }, [cables]);
-
- /* useEffect(() => {
-    setCables(cables => cables.map(cable => {
-      console.log(`${cable.color} reiniciado`); 
-      return { ...cable, cortado: false }; 
-    })
-  );
-  setOrden(1); 
-  }, [reinicio]);*/
 
   useEffect(() => {
     setCables((cables) =>

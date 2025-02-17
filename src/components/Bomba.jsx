@@ -30,7 +30,10 @@ function Bomba(){
                 <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
                 <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
               </tr>
-
+              <tr>
+                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
+                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
+              </tr>
           </thead>
         </table>
         <div className="button-container">
