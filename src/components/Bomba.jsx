@@ -22,16 +22,22 @@ function Bomba(){
     <div className="tabla-container">
        <table className="tabla">
           <thead>
-             <tr>
+              <tr>
                 <th ><Modulo tipo="temporizador" reinicio={reinicio}/></th>
                 <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
               </tr>
+              <tr>
+                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
+                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
+              </tr>
+
           </thead>
         </table>
-        <div>
+        <div className="button-container">
           <button class="button" onClick={reiniciarBomba}>Reinicio</button>
         </div>
       </div>
+      
     );
 }
 

@@ -5,7 +5,7 @@ import "./../styles/Fondo.css";
 
 function App() {
   return (
-    <div  className="grid-container">
+    <div className="tablero-container">
       <Bomba/>
     </div>
   );
