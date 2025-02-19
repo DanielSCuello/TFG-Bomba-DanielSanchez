@@ -20,6 +20,7 @@
   align-items: center;
   text-align: center;
   background-repeat: no-repeat;
+  gap: 10px;
   background: hsl(0, 0%, 100%);
   padding: 5px;
   border-radius: 1px;

@@ -5,11 +5,17 @@ import "./../styles/Bomba.css";
 
 
 function Bomba(){
+  const [resuelto,setResuelto] = useState(false);
   const [reinicio, setReinicio] = useState(false);
   const modulos=[
-    {name:"temporizador"},
-    {name:"cables"},
+    {name:"temporizador",},
+    {name:"cables",},
+    {name:"laberinto",},
   ]
+  
+  useEffect(()=>{
+    
+  },[])
 
   const reiniciarBomba = () => {
     setReinicio(true); 
@@ -24,15 +30,7 @@ function Bomba(){
           <thead>
               <tr>
                 <th ><Modulo tipo="temporizador" reinicio={reinicio}/></th>
-                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
-              </tr>
-              <tr>
-                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
-                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
-              </tr>
-              <tr>
-                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
-                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
+                <th ><Modulo tipo="laberinto" reinicio={reinicio}/></th>
               </tr>
           </thead>
         </table>

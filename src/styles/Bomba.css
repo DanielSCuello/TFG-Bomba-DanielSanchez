@@ -27,23 +27,7 @@
     color: white;
   }
   
-  .tabla th, .tabla td {
-    border: 0,5px solid #888;
-    font-size: 18px;
-  }
   
-  .tabla th {
-    background-color: #555;
-    color: #100d04;
-  }
-  
-  .tabla tr:nth-child(even) {
-    background-color: #222;
-  }
-  
-  .tabla tr:hover {
-    background-color: #444;
-  }
 
   .button-container{ 
     display: flex;

@@ -1,0 +1,87 @@
+.contenedor-tablas {
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-direction: column; /* ✅ Apila las tablas una encima de otra */
+    align-items: center; /* ✅ Centra horizontalmente */
+    gap: 20px; /* ✅ Espacio entre tablas */
+}
+
+.tabla-laberinto {
+    position: absolute; /* Se pega arriba dentro del contenedor */
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90px;
+    width: 90px;
+    border: 1px #000000;
+    border-collapse: collapse; 
+}
+
+.tabla-laberinto th, .tabla-laberinto td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    background-color: #309e2c; 
+}
+
+.tabla-laberinto tr {
+    background: #309e2c;
+}
+
+.tabla-boton {
+    border-collapse: collapse;
+    transform: translateY(100px);
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+}
+
+
+.boton-derecha , .boton-izquierda{
+    width: 24px;
+    height: 25px;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boton-derecha{
+    background-image: url("./../images/images-laberinto/boton-derecha.png");
+}
+
+.boton-izquierda{
+    background-image: url("./../images/images-laberinto/boton-izquierda.png");
+}
+
+.boton-abajo , .boton-arriba {
+    width: 29px;
+    height: 13px;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boton-arriba{
+    background-image: url("./../images/images-laberinto/boton-arriba.png");
+}
+
+.boton-abajo{
+    background-image: url("./../images/images-laberinto/boton-abajo.png");
+}
+
+.cuadrado {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    position: absolute; /* Se posiciona relativo a la celda */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* ✅ Centrar el cuadrado en la celda */
+}
