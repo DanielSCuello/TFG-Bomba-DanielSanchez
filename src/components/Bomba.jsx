@@ -32,6 +32,7 @@ function Bomba(){
                 <th ><Modulo tipo="temporizador" reinicio={reinicio}/></th>
                 <th ><Modulo tipo="laberinto" reinicio={reinicio}/></th>
               </tr>
+                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
           </thead>
         </table>
         <div className="button-container">

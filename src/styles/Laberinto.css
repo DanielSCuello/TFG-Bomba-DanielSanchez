@@ -11,24 +11,44 @@
     position: absolute; /* Se pega arriba dentro del contenedor */
     top: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    width: 90px; /* Ajusta según el tamaño de la celda */
     height: 90px;
-    width: 90px;
+    transform: translateX(-50%);
     border: 1px #000000;
     border-collapse: collapse; 
 }
 
-.tabla-laberinto th, .tabla-laberinto td {
+.tabla-laberinto td {
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
     border: 1px solid black;
     padding: 5px;
     text-align: left;
     background-color: #309e2c; 
 }
 
-.tabla-laberinto tr {
-    background: #309e2c;
+
+.cuadrado-jugador{
+    position: absolute; /* Se posiciona dentro de la celda sin modificarla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el cuadrado en la celda */
+    width: 8px;  /* Tamaño del cuadrado */
+    height: 8px;
+    background-color: red;
 }
 
+.cuadrado-final{
+    position: absolute; /* Se posiciona dentro de la celda sin modificarla */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el cuadrado en la celda */
+    width: 8px;  /* Tamaño del cuadrado */
+    height: 8px;
+    background-color: rgb(254, 254, 254);
+}
 .tabla-boton {
     border-collapse: collapse;
     transform: translateY(100px);
@@ -74,14 +94,4 @@
 
 .boton-abajo{
     background-image: url("./../images/images-laberinto/boton-abajo.png");
-}
-
-.cuadrado {
-    width: 8px;
-    height: 8px;
-    background-color: red;
-    position: absolute; /* Se posiciona relativo a la celda */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* ✅ Centrar el cuadrado en la celda */
 }
