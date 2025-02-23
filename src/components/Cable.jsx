@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./../styles/Cables.css";
 
-function Cable({ color, cortado, onCortar }) {
+function Cable({color, cortado, onCortar}) {
   const [hover, setHover] = useState(false);
 
   return (

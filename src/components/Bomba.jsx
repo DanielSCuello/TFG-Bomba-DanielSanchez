@@ -7,15 +7,17 @@ import "./../styles/Bomba.css";
 function Bomba(){
   const [resuelto,setResuelto] = useState(false);
   const [reinicio, setReinicio] = useState(false);
-  const modulos=[
-    {name:"temporizador",},
-    {name:"cables",},
-    {name:"laberinto",},
-  ]
-  
+  const [modulos, setModulos] = useState([
+    { name: "temporizador", resuelto: false },
+    { name: "cables", resuelto: false },
+    { name: "laberinto", resuelto: false }
+  ]);
+ 
   useEffect(()=>{
-    
-  },[])
+    if (modulos.every((modulo) => modulo.resuelto === true)) {
+      console.log("hola")
+    }
+  },[modulos])
 
   const reiniciarBomba = () => {
     setReinicio(true); 
@@ -29,10 +31,12 @@ function Bomba(){
        <table className="tabla">
           <thead>
               <tr>
-                <th ><Modulo tipo="temporizador" reinicio={reinicio}/></th>
-                <th ><Modulo tipo="laberinto" reinicio={reinicio}/></th>
+                <th ><Modulo tipo="temporizador" modulos={modulos} setModulo={setModulos} reinicio={reinicio}/></th>
+                <th ><Modulo tipo="cables" modulos={modulos}  setModulo={setModulos} reinicio={reinicio}/></th>
               </tr>
-                <th ><Modulo tipo="cables" reinicio={reinicio}/></th>
+              <tr>
+                <th ><Modulo tipo="laberinto" modulos={modulos}  setModulo={setModulos} reinicio={reinicio}/></th>
+              </tr>
           </thead>
         </table>
         <div className="button-container">

@@ -2,16 +2,16 @@
     height: 170px;
     width: 170px;
     display: flex;
-    flex-direction: column; /* ✅ Apila las tablas una encima de otra */
-    align-items: center; /* ✅ Centra horizontalmente */
-    gap: 20px; /* ✅ Espacio entre tablas */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 .tabla-laberinto {
-    position: absolute; /* Se pega arriba dentro del contenedor */
+    position: absolute; 
     top: 15px;
     left: 50%;
-    width: 90px; /* Ajusta según el tamaño de la celda */
+    width: 90px; 
     height: 90px;
     transform: translateX(-50%);
     border: 1px #000000;

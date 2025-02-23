@@ -1,7 +1,7 @@
 import { useState ,useEffect } from "react";
 import "./../styles/Laberinto.css";
 
-function Coordenada({ coordenadaX ,coordenadaY, coordenadaXJugador ,coordenadaYJugador , final , camino }) {
+function Coordenada({coordenadaX ,coordenadaY, coordenadaXJugador ,coordenadaYJugador , final}) {
     const [jugador, setJugador] = useState(true);
 
     useEffect(()=>{
@@ -11,9 +11,6 @@ function Coordenada({ coordenadaX ,coordenadaY, coordenadaXJugador ,coordenadaYJ
             setJugador(false);
         }
       },[coordenadaXJugador,coordenadaYJugador]); 
-
-      
-
 
       return (
         final ? <div className="cuadrado-final"></div> :

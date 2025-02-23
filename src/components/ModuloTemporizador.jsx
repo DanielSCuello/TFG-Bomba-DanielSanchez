@@ -37,6 +37,11 @@ function Temporizador({ inicialMinutos , setFallado ,reinicio}) {
   return (
     <div>
       <h3 className="clock">{minutos} : {segundos} {segundos2}</h3>
+      <table className="botones-container">
+        <td><div className="boton-roj" /></td>
+        <td><div className="boton-roj"/></td>
+        <td><div className="boton-roj"/></td>
+      </table>
     </div>
   );
 }

@@ -8,6 +8,8 @@
 }
 
 .clock {
+    transform: translateY(20%);
+    transform: translateX(10%);
     height: 20px ;
     width : 120px;
     font-family: 'DS-DIGITB', monospace;
@@ -18,3 +20,24 @@
     border-color:black ;
 }
 
+.botones-container{
+    width: 160px;
+    height: 50px;
+}
+
+.boton-roj , .boton-blanc , .boton-negr{
+    height: 50px ;
+    width : 50px;
+}
+
+.boton-roj {
+    background-image: url("../images/images-boton/boton-roj.png");
+}
+
+.td-boton{
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}

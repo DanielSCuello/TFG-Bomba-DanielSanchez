@@ -22,6 +22,11 @@ export let GLOBAL_CONFIG = {
   },
 };
 
+
+
+
+
+
 export const CABLES_CONFIG = {
   cableroj: { color: "roj", orden: 1 },
   cableazu: { color: "azu", orden: 2 },
