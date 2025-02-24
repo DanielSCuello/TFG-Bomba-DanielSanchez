@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./../styles/Laberinto.css";
-import { CABLES_CONFIG } from "../config/config.js";
+import { LABERINTO_CONFIG } from "../config/config.js";
 import Coordenada from "./Coordenada.jsx";
 
 function Laberinto({setResuelto , fallado ,setFallado , reinicio}) {

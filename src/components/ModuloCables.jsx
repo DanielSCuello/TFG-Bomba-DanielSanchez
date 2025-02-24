@@ -60,8 +60,8 @@ function Cables({setResuelto , fallado ,setFallado , reinicio}) {
 
   return (
     <div className="cables-container">
-      {cables.map((cable, index) => (
-        <Cable key={index} color={cable.color} cortado={cable.cortado} onCortar={() => cortarCable(cable.color)}/>
+      {cables.map((cable) => (
+        <Cable  color={cable.color} cortado={cable.cortado} onCortar={() => cortarCable(cable.color)}/>
       ))}
     </div>
   );

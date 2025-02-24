@@ -25,7 +25,7 @@ function Modulo({ tipo,modulos,setModulo ,reinicio}) {
   return (
     <div className="modulo">
       <div className={fallado ? "luz-roj" : resuelto ? "luz-ver" : "luz-apa"}/>
-        {tipo === "temporizador" && <Temporizador inicialMinutos={5} setResuelto={setResuelto} fallado={fallado} setFallado={setFallado} reinicio={reinicio}/>}
+        {tipo === "temporizador" && <Temporizador inicialMinutos={5} resuelto={resuelto} setResuelto={setResuelto} fallado={fallado} setFallado={setFallado} reinicio={reinicio}/>}
         {tipo === "cables" && <Cables setResuelto={setResuelto} fallado={fallado} setFallado={setFallado} reinicio={reinicio}/>}
         {tipo === "laberinto" && <Laberinto setResuelto={setResuelto} fallado={fallado} setFallado={setFallado} reinicio={reinicio}/>}
     </div>

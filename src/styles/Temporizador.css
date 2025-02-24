@@ -19,22 +19,38 @@
     border: 3px solid black;
     border-color:black ;
 }
-
-.botones-container{
+.contador-container{
     width: 160px;
-    height: 50px;
+    height: 80px;
+    background-image: url("../images/images-boton/contador-container.png");
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 0;
 }
 
-.boton-roj , .boton-blanc , .boton-negr{
-    height: 50px ;
-    width : 50px;
+.tr-boton-arr , .tr-boton-aba{
+    height: 15px ;
+    width : 30px;
 }
 
-.boton-roj {
-    background-image: url("../images/images-boton/boton-roj.png");
+.tr-boton-aba{
+    background-image: url("../images/images-boton/boton-aba.png");
 }
 
-.td-boton{
+.tr-boton-arr{
+    background-image: url("../images/images-boton/boton-arr.png");
+}
+
+.tr-digito{
+    height: 30px ;
+    width : 30px;
+    font-family: 'DS-DIGITB', monospace;
+    font-size: 20px;
+    color: rgb(8, 10, 8);
+    background: #309e2c;
+    border: 3px solid black;
+    border-color:black ;
     text-align: center;
     vertical-align: middle;
     display: flex;

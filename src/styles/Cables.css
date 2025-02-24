@@ -36,18 +36,6 @@
     background-image: url("../images/images-cables/cable-resplandor.png");
 }
 
-  .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
-    animation: colorChange 2s infinite alternate;
-}
-
-@keyframes colorChange {
-    0% { background-color: red; }
-    100% { background-color: gray; }
-}
 
 .cables-container {
     justify-content: center; /* Centra horizontalmente */

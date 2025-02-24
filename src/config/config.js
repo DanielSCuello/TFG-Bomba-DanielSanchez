@@ -23,9 +23,15 @@ export let GLOBAL_CONFIG = {
 };
 
 
+export const TEMPORIZADOR_CONFIG = {
+  digito1: { valor : 1 },
+  digito2: { valor : 1 },
+  digito3: { valor : 1 },
+};
 
-
-
+export const LABERINTO_CONFIG ={
+  
+}
 
 export const CABLES_CONFIG = {
   cableroj: { color: "roj", orden: 1 },
