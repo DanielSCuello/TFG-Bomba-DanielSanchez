@@ -30,7 +30,13 @@ export const TEMPORIZADOR_CONFIG = {
 };
 
 export const LABERINTO_CONFIG ={
-  
+  coordenada: {x:0,y:0},
+  coordenada: {x:1,y:0},
+  coordenada: {x:1,y:1},
+  coordenada: {x:2,y:1},
+  coordenada: {x:2,y:2},
+  coordenada: {x:3,y:2},
+
 }
 
 export const CABLES_CONFIG = {

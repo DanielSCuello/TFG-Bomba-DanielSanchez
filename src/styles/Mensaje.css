@@ -1,0 +1,18 @@
+
+.display-mensaje {
+    width : 400px;
+    height: 250px;
+    background-image: url("../images/display-mensajes.png");
+  }
+
+  .mensaje {
+    transform: translate(30px,115px);
+    height: 15px ;
+    width : 160px;
+    font-family: 'DS-DIGITB', monospace;
+    font-size: 15px;
+    color: rgb(8, 10, 8);
+    background: #309e2c;
+    border: 3px solid black;
+    border-color:black ;
+}

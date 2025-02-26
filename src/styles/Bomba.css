@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-.tabla-container {
+.bomba-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+}
+
+
+.bomba {
   flex-direction: column;
   border-collapse: separate;
   display: flex;
@@ -10,7 +16,6 @@
   width : 400px;
   height: 660px;
   padding: 20px;
-  background-color: #333;
   background-image: url("../images/bomba.png");
   background-repeat: no-repeat;
   }

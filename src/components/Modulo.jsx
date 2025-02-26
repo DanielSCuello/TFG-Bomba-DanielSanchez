@@ -4,19 +4,23 @@ import Temporizador from "./ModuloTemporizador.jsx";
 import Cables from "./ModuloCables.jsx"; 
 import Laberinto from "./ModuloLaberinto.jsx"; 
 
-function Modulo({ tipo,modulos,setModulo ,reinicio}) {
+function Modulo({ tipo, setModulo ,reinicio ,setBombaFallada}) {
   const [resuelto, setResuelto] = useState(false);
   const [fallado, setFallado] = useState(false);
 
   useEffect(() => {
       setModulo((prevModulos) =>
         prevModulos.map((modulo) =>
-          modulo.name === tipo ? resuelto ? { ...modulo, resuelto: true } : modulo : modulo
+          modulo.name === tipo ? resuelto ? { ...modulo, resuelto: true } : { ...modulo, resuelto: false } : modulo
         )
       );
-    },[resuelto]);
+    },[resuelto ,setModulo]);
+
+  useEffect(() => {
+    setBombaFallada(fallado);
+  },[fallado]);
   
-  //if (modulos.some((modulo) => modulo.name === tipo)) 
+
   useEffect(()=>{
     setResuelto(false);
     setFallado(false);

@@ -6,7 +6,7 @@ import Coordenada from "./Coordenada.jsx";
 function Laberinto({setResuelto , fallado ,setFallado , reinicio}) {
     const[principio,setPrincipio]=useState({x:0,y:0});
     const[posicionJugador,setPosicionJugador]=useState({x:null,y:null});
-    const[final,setFinal]=useState({x:3,y:3});
+    const[final,setFinal]=useState({x:0,y:1});
     const [caminos, setCamino] = useState([
         {x:0,y:0},
         {x:1,y:0},
