@@ -2,8 +2,8 @@
     flex-direction: column;
     border-collapse: separate;
     display: flex;
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra todo verticalmente */
+    align-items: center; 
+    justify-content: center; 
     height: 100%;
     width: 100%;
     padding: 20px;

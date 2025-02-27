@@ -31,21 +31,21 @@
 
 
 .cuadrado-jugador{
-    position: absolute; /* Se posiciona dentro de la celda sin modificarla */
+    position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el cuadrado en la celda */
-    width: 8px;  /* Tamaño del cuadrado */
+    transform: translate(-50%, -50%); 
+    width: 8px;  
     height: 8px;
     background-color: red;
 }
 
 .cuadrado-final{
-    position: absolute; /* Se posiciona dentro de la celda sin modificarla */
+    position: absolute; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el cuadrado en la celda */
-    width: 8px;  /* Tamaño del cuadrado */
+    transform: translate(-50%, -50%); 
+    width: 8px;  
     height: 8px;
     background-color: rgb(254, 254, 254);
 }

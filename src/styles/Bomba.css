@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .bomba-container {
   display: flex;
-  align-items: center; /* Alinea verticalmente */
+  align-items: center; 
 }
-
 
 .bomba {
   flex-direction: column;
   border-collapse: separate;
   display: flex;
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra todo verticalmente */
+  align-items: center; 
+  justify-content: center; 
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   width : 400px;
   height: 660px;
@@ -19,21 +17,17 @@
   background-image: url("../images/bomba.png");
   background-repeat: no-repeat;
   }
-  
-  .tabla {
-    border-collapse: separate;
-    border-spacing: 10px;
-    background: #1a1a1a;
-    padding: 10px;
-    border-radius: 10px;
+
+  .modulos-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-    width: auto;
-    text-align: center;
-    color: white;
+  }  
+
+  .modulo-container{
+    background-color: rgb(25, 26, 27);
+    padding: 10px;
+    border: 1px solid #000;
   }
-  
-  
 
   .button-container{ 
     display: flex;
@@ -59,6 +53,8 @@
     align-items: center;
     text-align: center;
     border-radius: 5px; 
+    padding: 10px 15px;
+    margin-top: 10px;
     font-size: 9px; 
     font-family: 'Staatliches', sans-serif; 
     cursor: pointer;

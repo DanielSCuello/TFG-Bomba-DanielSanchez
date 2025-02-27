@@ -2,16 +2,19 @@ import { useState, useEffect } from "react";
 import Modulo from "./Modulo.jsx";
 import Mensaje from "./Mensaje.jsx";
 import "./../styles/Bomba.css"; 
+import { MODULOS_CONFIG } from "../config/config.js";
+
 
 function Bomba(){
   const [fallado,setFallado] = useState(false);
   const [resuelto,setResuelto] = useState(false);
   const [reinicio, setReinicio] = useState(false);
-  const [modulos, setModulos] = useState([
-    { name: "temporizador", resuelto: false },
-    { name: "cables", resuelto: false },
-    { name: "laberinto", resuelto: false }
-  ]);
+  const [modulos, setModulos] = useState(
+    Object.keys(MODULOS_CONFIG.modulos).map((name) => ({
+    name,
+    resuelto: false,})
+  ));
+
  
   useEffect(()=>{
     if (modulos.every((modulo) => modulo.resuelto === true)) {
@@ -21,7 +24,7 @@ function Bomba(){
 
 
   useEffect(() => {
-    console.log(resuelto); // Esto imprimirá el valor correcto
+    console.log(resuelto); 
   }, [resuelto]);
 
   const reiniciarBomba = () => {
@@ -32,22 +35,20 @@ function Bomba(){
       setReinicio(false); 
     }, 100);
   };
+  
 
   return (
     <div className="bomba-container">
       <Mensaje resuelto={resuelto} fallado={fallado}/>
         <div className="bomba">
-          <table className="tabla">
-              <thead>
-                  <tr>
-                    <th ><Modulo tipo="temporizador" modulos={modulos}  setModulo={setModulos} setBombaFallada={setFallado} reinicio={reinicio}/></th>
-                    <th ><Modulo tipo="cables" modulos={modulos}  setModulo={setModulos} setBombaFallada={setFallado} reinicio={reinicio}/></th>
-                  </tr>
-                  <tr>
-                    <th ><Modulo tipo="laberinto" modulos={modulos}  setModulo={setModulos} setBombaFallada={setFallado} reinicio={reinicio}/></th>
-                  </tr>
-              </thead>
-            </table>
+          <div className="modulos-grid">
+            {modulos.map((modulo) => (
+              <div  className={"modulo-container"}>
+                <Modulo tipo={modulo.name} modulos={modulos} setModulo={setModulos} setBombaFallada={setFallado} reinicio={reinicio}/>
+              </div>
+            ))}
+            {modulos.length%2!==0 &&<div className={"modulo-container"}/>}
+          </div>
             <div className="button-container">
               <button class="button" onClick={reiniciarBomba}>Reinicio</button>
             </div>

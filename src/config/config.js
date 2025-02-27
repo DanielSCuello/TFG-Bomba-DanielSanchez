@@ -22,6 +22,31 @@ export let GLOBAL_CONFIG = {
   },
 };
 
+export const MODULOS_CONFIG={
+  modulos: {
+    "temporizador":{
+      digito1: { valor : 1 },
+      digito2: { valor : 1 },
+      digito3: { valor : 1 },
+    },
+    "laberinto":{
+      coordenadas:{
+        coordenada: {x:0,y:0},
+        coordenada: {x:1,y:0},
+        coordenada: {x:1,y:1},
+        coordenada: {x:2,y:1},
+        coordenada: {x:2,y:2},
+        coordenada: {x:3,y:2},
+      },
+    },
+    "cables":{
+      cableroj: { color: "roj", orden: 1 },
+      cableazu: { color: "azu", orden: 2 },
+      cableama: { color: "ama", orden: 3 },
+      cablever: { color: "ver", orden: 4 },
+    },
+  },
+}                                
 
 export const TEMPORIZADOR_CONFIG = {
   digito1: { valor : 1 },
