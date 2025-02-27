@@ -4,9 +4,9 @@ import { MODULOS_CONFIG} from "../config/config.js";
 import Coordenada from "./Coordenada.jsx";
 
 function Laberinto({setResuelto , fallado ,setFallado , reinicio}) {
-    const[principio,setPrincipio]=useState({x:0,y:0});
+    const[principio,setPrincipio]=useState(MODULOS_CONFIG.modulos.laberinto.inicio);
     const[posicionJugador,setPosicionJugador]=useState({x:null,y:null});
-    const[final,setFinal]=useState({x:0,y:1});
+    const[final,setFinal]=useState(MODULOS_CONFIG.modulos.laberinto.final);
     const [caminos, setCamino] = useState(
         Object.values(MODULOS_CONFIG.modulos.laberinto.coordenadas).map((coordenada) => ({
           ...coordenada,

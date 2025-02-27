@@ -38,6 +38,8 @@ export const MODULOS_CONFIG={
         { x: 2, y: 2 },
         { x: 3, y: 2 },
       ],
+      inicio:{x:0,y:0},
+      final: {x:3,y:3},
     },
     "cables":{
       cableroj: { color: "roj", orden: 1 },
