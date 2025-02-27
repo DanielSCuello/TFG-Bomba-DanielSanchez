@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import "./../styles/Temporizador.css"; 
 import Digito from "./Digito.jsx";
-import { TEMPORIZADOR_CONFIG } from "../config/config.js";
+import { MODULOS_CONFIG } from "../config/config.js";
 
 function Temporizador({ inicialMinutos ,resuelto ,setResuelto , setFallado ,reinicio}) {
   const [minutos, setMinutos] = useState(inicialMinutos);
   const [segundos, setSegundos] = useState(0);
   const [segundos2, setSegundos2] = useState(0);
   const [digitos, setDigitos] = useState(
-      Object.values(TEMPORIZADOR_CONFIG).map((digito) => ({
+      Object.values(MODULOS_CONFIG.modulos.temporizador).map((digito) => ({
         ...digito,
         actual: 0,
       }))

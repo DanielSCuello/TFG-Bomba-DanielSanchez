@@ -14,7 +14,7 @@ function Mensaje({resuelto, fallado}) {
       setMensaje("")
     }
   },[fallado , resuelto])
-
+  
   return (
     <div className="display-mensaje">
       <div className="mensaje">{mensaje}</div>

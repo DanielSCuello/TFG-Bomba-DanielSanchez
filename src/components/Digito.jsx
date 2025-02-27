@@ -21,7 +21,6 @@ function Digito({indice ,digito , numero, setDigitos}) {
         }
     }
 
-    
   return (
     <div>
         <tr><div className="tr-boton-arr" onClick={()=>actualizarDigito(indice,cambioNumero(numero+1))}/></tr>

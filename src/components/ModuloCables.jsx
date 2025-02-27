@@ -1,18 +1,17 @@
 import { useState, useEffect } from "react";
 import "./../styles/Cables.css";
 import Cable from "./Cable.jsx";
-import { CABLES_CONFIG } from "../config/config.js";
+import { MODULOS_CONFIG } from "../config/config.js";
 
 function Cables({setResuelto , fallado ,setFallado , reinicio}) {
   const[orden,setOrden]=useState(1);
   const [cables, setCables] = useState(
-    Object.values(CABLES_CONFIG).map((cable) => ({
+    Object.values(MODULOS_CONFIG.modulos.cables).map((cable) => ({
       ...cable,
       cortado: false,
     }))
   );
   
-
   const cortarCable = (color) => {
     setCables((prevCables) =>
       prevCables.map((cable) =>{

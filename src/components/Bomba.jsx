@@ -4,7 +4,6 @@ import Mensaje from "./Mensaje.jsx";
 import "./../styles/Bomba.css"; 
 import { MODULOS_CONFIG } from "../config/config.js";
 
-
 function Bomba(){
   const [fallado,setFallado] = useState(false);
   const [resuelto,setResuelto] = useState(false);
@@ -15,13 +14,11 @@ function Bomba(){
     resuelto: false,})
   ));
 
- 
   useEffect(()=>{
     if (modulos.every((modulo) => modulo.resuelto === true)) {
       setResuelto(true);
     }
   },[modulos,resuelto])
-
 
   useEffect(() => {
     console.log(resuelto); 
@@ -36,7 +33,6 @@ function Bomba(){
     }, 100);
   };
   
-
   return (
     <div className="bomba-container">
       <Mensaje resuelto={resuelto} fallado={fallado}/>

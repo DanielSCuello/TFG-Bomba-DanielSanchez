@@ -1,21 +1,17 @@
 import { useState, useEffect } from "react";
 import "./../styles/Laberinto.css";
-import { LABERINTO_CONFIG } from "../config/config.js";
+import { MODULOS_CONFIG} from "../config/config.js";
 import Coordenada from "./Coordenada.jsx";
 
 function Laberinto({setResuelto , fallado ,setFallado , reinicio}) {
     const[principio,setPrincipio]=useState({x:0,y:0});
     const[posicionJugador,setPosicionJugador]=useState({x:null,y:null});
     const[final,setFinal]=useState({x:0,y:1});
-    const [caminos, setCamino] = useState([
-        {x:0,y:0},
-        {x:1,y:0},
-        {x:1,y:1},
-        {x:2,y:1},
-        {x:2,y:2},
-        {x:3,y:2},
-        final,
-    ]);
+    const [caminos, setCamino] = useState(
+        Object.values(MODULOS_CONFIG.modulos.laberinto.coordenadas).map((coordenada) => ({
+          ...coordenada,
+        }))
+    );
     
     const size=4;
 
@@ -34,7 +30,7 @@ function Laberinto({setResuelto , fallado ,setFallado , reinicio}) {
     },[posicionJugador]); 
 
     useEffect(() => {
-        const esCamino = caminos.some(camino => camino.x === posicionJugador.x && camino.y === posicionJugador.y);
+        const esCamino = caminos.some(camino => camino.x === posicionJugador.x && camino.y === posicionJugador.y) || (final.x === posicionJugador.x && final.y === posicionJugador.y);
         setFallado(!esCamino);
     }, [posicionJugador]); 
 
