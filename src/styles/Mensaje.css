@@ -2,7 +2,7 @@
 .display-mensaje {
     width : 400px;
     height: 250px;
-    background-image: url("../images/display-mensajes.png");
+    background-image: url("../assets/images/display-mensajes.png");
   }
 
   .mensaje {

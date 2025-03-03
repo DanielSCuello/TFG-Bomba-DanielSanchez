@@ -12,7 +12,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   width: 162px;  
   height: 162px; 
-  background-image: url("../images/Modulo.png");
+  background-image: url("../assets/images/images-modulo/Modulo.png");
 }
 
 .luz-roj,.luz-apa,.luz-ver {
@@ -28,13 +28,13 @@
 }
 
 .luz-roj {
-  background-image: url("../images/images-luces/luz-roja.png");
+  background-image: url("../assets/images/images-modulo/luz-roja.png");
 }
 
 .luz-apa {
-  background-image: url("../images/images-luces/luz-apa.png");
+  background-image: url("../assets/images/images-modulo/luz-apa.png");
 }
 
 .luz-ver {
-  background-image: url("../images/images-luces/luz-verde.png");
+  background-image: url("../assets/images/images-modulo/luz-verde.png");
 }

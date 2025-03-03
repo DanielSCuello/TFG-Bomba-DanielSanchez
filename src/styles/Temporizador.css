@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'DS-DIGITB';
-    src: url('../fonts/DS-DIGIB.TTF');
+    src: url('../assets/fonts/DS-DIGIB.TTF');
 }
 
 .DS-DIGITB {
@@ -22,7 +22,7 @@
 .contador-container{
     width: 160px;
     height: 80px;
-    background-image: url("../images/images-boton/contador-container.png");
+    background-image: url("../assets/images/images-boton/contador-container.png");
     display: flex;
     justify-content: center; 
     align-items: center;     
@@ -35,11 +35,11 @@
 }
 
 .tr-boton-aba{
-    background-image: url("../images/images-boton/boton-aba.png");
+    background-image: url("../assets/images/images-boton/boton-aba.png");
 }
 
 .tr-boton-arr{
-    background-image: url("../images/images-boton/boton-arr.png");
+    background-image: url("../assets/images/images-boton/boton-arr.png");
 }
 
 .tr-digito{

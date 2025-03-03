@@ -56,7 +56,6 @@ function Temporizador({ inicialMinutos ,resuelto ,setResuelto , setFallado ,rein
         setSegundos2((prev) => prev - 1);
       }
     }}, 1000);
-
     return () => clearInterval(intervalo);
   }, [minutos, segundos, segundos2]);
 

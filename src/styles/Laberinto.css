@@ -70,11 +70,11 @@
 }
 
 .boton-derecha{
-    background-image: url("./../images/images-laberinto/boton-derecha.png");
+    background-image: url("./../assets/images/images-laberinto/boton-derecha.png");
 }
 
 .boton-izquierda{
-    background-image: url("./../images/images-laberinto/boton-izquierda.png");
+    background-image: url("./../assets/images/images-laberinto/boton-izquierda.png");
 }
 
 .boton-abajo , .boton-arriba {
@@ -89,9 +89,9 @@
 }
 
 .boton-arriba{
-    background-image: url("./../images/images-laberinto/boton-arriba.png");
+    background-image: url("./../assets/images/images-laberinto/boton-arriba.png");
 }
 
 .boton-abajo{
-    background-image: url("./../images/images-laberinto/boton-abajo.png");
+    background-image: url("./../assets/images/images-laberinto/boton-abajo.png");
 }

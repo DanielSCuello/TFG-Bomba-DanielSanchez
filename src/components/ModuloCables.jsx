@@ -49,7 +49,6 @@ function Cables({setResuelto , fallado ,setFallado , reinicio}) {
     setCables((cables) =>
       shuffleArray(
         cables.map((cable) => {
-          console.log(`${cable.color} reiniciado`);
           return { ...cable, cortado: false };
         })
       )

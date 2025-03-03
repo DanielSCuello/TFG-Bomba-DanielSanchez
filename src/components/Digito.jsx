@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./../styles/Temporizador.css";
 
-function Digito({indice ,digito , numero, setDigitos}) {
+function Digito({indice , numero, setDigitos}) {
 
     const actualizarDigito = (indice, nuevoValor) => {
         setDigitos((prevDigitos) =>

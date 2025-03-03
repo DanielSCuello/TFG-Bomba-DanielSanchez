@@ -47,5 +47,19 @@ export const MODULOS_CONFIG={
       cableama: { color: "ama", orden: 3 },
       cablever: { color: "ver", orden: 4 },
     },
+    "luces":{
+      orden: [
+        { color:"roj" },
+        { color:"azu" },
+        { color:"ama" },
+        { color:"ver" },
+      ],
+      colores: [
+        { color:"roj" , colorOrden: "azu" },
+        { color:"azu" , colorOrden: "roj"},
+        { color:"ama" , colorOrden: "ver"},
+        { color:"ver" , colorOrden: "ama"},
+      ],
+    },
   },
 }                                

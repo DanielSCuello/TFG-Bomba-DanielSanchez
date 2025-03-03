@@ -12,28 +12,28 @@
 }
 
 .cable-roj {
-    background-image: url("../images/images-cables/cable-rojo.png");
+    background-image: url("../assets/images/images-cables/cable-rojo.png");
 }
 
 .cable-azu {
-    background-image: url("../images/images-cables/cable-azul.png");
+    background-image: url("../assets/images/images-cables/cable-azul.png");
 }
 
 .cable-ama {
-    background-image: url("../images/images-cables/cable-amarillo.png");
+    background-image: url("../assets/images/images-cables/cable-amarillo.png");
 }
 
 .cable-ver {
-    background-image: url("../images/images-cables/cable-verde.png");
+    background-image: url("../assets/images/images-cables/cable-verde.png");
 }
 
 .cable-cor {
-    background-image: url("../images/images-cables/cable-cortado.png");
+    background-image: url("../assets/images/images-cables/cable-cortado.png");
 }
 
 
 .cable-resp {
-    background-image: url("../images/images-cables/cable-resplandor.png");
+    background-image: url("../assets/images/images-cables/cable-resplandor.png");
 }
 
 
@@ -47,6 +47,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../images/Cables.png");
+    background-image: url("../assets/images/Cables.png");
 }
 

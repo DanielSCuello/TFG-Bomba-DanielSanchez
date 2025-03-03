@@ -1,0 +1,49 @@
+.led {
+    margin: 0 auto;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 20%;
+    border: 2px solid black; 
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px;
+  }
+
+  .blink-roj {
+    animation: blinkRed 3s infinite;
+  }
+  
+  .blink-ama {
+    animation: blinkYellow 3s infinite;
+  }
+
+  .blink-azu {
+    animation: blinkBlue 3s infinite;
+  }
+
+  .blink-ver {
+    animation: blinkGreen 3s infinite;
+  }
+  
+  @keyframes blinkRed {
+      from { background-color: rgb(52, 50, 50); }
+      50% { background-color: #F00; }
+      to { background-color: rgb(52, 50, 50); }
+  }
+  
+  @keyframes blinkYellow {
+      from { background-color: rgb(52, 50, 50); }
+      50% { background-color: #FF0; }
+      to { background-color: rgb(52, 50, 50); }
+  }
+
+  @keyframes blinkBlue {
+    from { background-color: rgb(52, 50, 50); }
+    50% { background-color: rgb(38, 95, 227); }
+    to { background-color: rgb(52, 50, 50); }
+  }
+
+  @keyframes blinkGreen {
+    from { background-color: rgb(52, 50, 50); }
+    50% { background-color: rgb(15, 142, 30); }
+    to { background-color: rgb(52, 50, 50); }
+  }
